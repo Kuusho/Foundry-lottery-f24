@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate Header",
+      "type": "shell",
+      "command": "headers ${input:header}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "header",
+      "description": "Header",
+      "type": "promptString"
+    }
+  ]
+}
